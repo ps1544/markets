@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FilingSummary>
+  <Version>3.8.0.1</Version>
+  <ProcessingTime/>
+  <ReportFormat>html</ReportFormat>
+  <ContextCount>2</ContextCount>
+  <ElementCount>2194</ElementCount>
+  <EntityCount>1</EntityCount>
+  <FootnotesReported>false</FootnotesReported>
+  <SegmentCount>0</SegmentCount>
+  <ScenarioCount>0</ScenarioCount>
+  <TuplesReported>false</TuplesReported>
+  <UnitCount>3</UnitCount>
+  <MyReports>
+    <Report instance="Call_123.XBRL">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R1.htm</HtmlFileName>
+      <LongName>http://www.ffiec.gov/xbrl/report/column</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.ffiec.gov/xbrl/report/column</Role>
+      <ShortName></ShortName>
+      <MenuCategory>Cover</MenuCategory>
+      <Position>1</Position>
+    </Report>
+    <Report instance="Call_123.XBRL">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R2.htm</HtmlFileName>
+      <LongName>http://www.ffiec.gov/xbrl/report/line</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://www.ffiec.gov/xbrl/report/line</Role>
+      <ShortName></ShortName>
+      <MenuCategory>Notes</MenuCategory>
+      <Position>2</Position>
+    </Report>
+    <Report instance="Call_123.XBRL">
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <HtmlFileName>R9999.htm</HtmlFileName>
+      <LongName>Uncategorized Items - Call_123.XBRL</LongName>
+      <ReportType>Sheet</ReportType>
+      <Role>http://xbrl.sec.gov/role/uncategorizedFacts</Role>
+      <ShortName>Uncategorized Items - Call_123.XBRL</ShortName>
+      <MenuCategory>Cover</MenuCategory>
+      <Position>3</Position>
+    </Report>
+    <Report>
+      <IsDefault>false</IsDefault>
+      <HasEmbeddedReports>false</HasEmbeddedReports>
+      <LongName>All Reports</LongName>
+      <ReportType>Book</ReportType>
+      <ShortName>All Reports</ShortName>
+    </Report>
+  </MyReports>
+  <InputFiles/>
+  <SupplementalFiles/>
+  <BaseTaxonomies/>
+  <HasPresentationLinkbase>false</HasPresentationLinkbase>
+  <HasCalculationLinkbase>false</HasCalculationLinkbase>
+</FilingSummary>

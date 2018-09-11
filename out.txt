@@ -1,0 +1,103 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building StockData 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:1.5.0:java (default-cli) @ StockData ---
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/C:/Users/pshar/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.7/log4j-slf4j-impl-2.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/C:/Users/pshar/.m2/repository/org/slf4j/slf4j-log4j12/1.7.24/slf4j-log4j12-1.7.24.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+06:57:39.222 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.App - Hello World From Stock Data!!!
+06:57:40.335 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataDailyMarketImpl - Generating Market Data for Stocks from NASDAQ and NYSE Exchanges.
+Requesting (GET request): http://www.wsj.com/mdc/public/page/2_3024-Nasdaq.html?mod=mdc_uss_pglnk
+06:57:47.287 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataDailyMarketImpl - Collecting data for Symbols listed on Exchange: NASDAQ Global
+Requesting (GET request): http://www.wsj.com/mdc/public/page/2_3024-NYSE.html?mod=topnav_2_3024
+06:57:54.767 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataDailyMarketImpl - Collecting data for Symbols listed on Exchange: NYSE
+Requesting (GET request): http://www.wsj.com/mdc/public/page/2_3024-SCAP.html?mod=topnav_2_3024
+06:58:01.071 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataDailyMarketImpl - Collecting data for Symbols listed on Exchange: NASDAQ Capital
+Requesting (GET request): http://www.wsj.com/mdc/public/page/2_3024-AMEX.html?mod=topnav_2_3024
+06:58:06.317 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataDailyMarketImpl - Collecting data for Symbols listed on Exchange: NYSE American
+06:58:06.471 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataDailyMarketImpl - Symbols w/ Highest Net Change given minimum starting value and traded volumes of '10.0' & '5000000' are ...
+06:58:06.472 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataDailyMarketImpl - 		[1]SC
+06:58:06.472 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataDailyMarketImpl - 		[2]MITL
+06:58:06.526 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataDailyMarketImpl - Retrieving Quarterly and Annual Financial Records.
+06:58:16.162 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.catalog.DBConnectMySql - Balance Sheet information already in catalog for symbol: 'SC' for the quarter:4Q2017
+06:58:16.165 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.catalog.DBConnectMySql - Balance Sheet information already in catalog for symbol: 'SC' for the quarter:3Q2017
+06:58:16.171 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.catalog.DBConnectMySql - Balance Sheet information already in catalog for symbol: 'SC' for the quarter:2Q2017
+06:58:16.173 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.catalog.DBConnectMySql - Balance Sheet information already in catalog for symbol: 'SC' for the quarter:1Q2017
+06:58:16.177 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.catalog.DBConnectMySql - Balance Sheet information already in catalog for symbol: 'MITL' for the quarter:4Q2017
+06:58:16.179 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.catalog.DBConnectMySql - Balance Sheet information already in catalog for symbol: 'MITL' for the quarter:3Q2017
+06:58:16.181 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.catalog.DBConnectMySql - Balance Sheet information already in catalog for symbol: 'MITL' for the quarter:2Q2017
+06:58:16.182 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.catalog.DBConnectMySql - Balance Sheet information already in catalog for symbol: 'MITL' for the quarter:1Q2017
+06:58:16.183 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.catalog.DBConnectMySql - Total # of records inserted into table 'bsheet2018' : 0
+06:58:16.183 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.catalog.DBConnectMySql - Total # of records skipped (were already present) for insert: 8
+06:58:16.220 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.catalog.DBInsertIncomeStmts - Income Statement information already in catalog for symbol: 'SC' for the quarter:4Q2017
+06:58:16.221 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.catalog.DBInsertIncomeStmts - Income Statement information already in catalog for symbol: 'SC' for the quarter:3Q2017
+06:58:16.222 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.catalog.DBInsertIncomeStmts - Income Statement information already in catalog for symbol: 'SC' for the quarter:2Q2017
+06:58:16.223 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.catalog.DBInsertIncomeStmts - Income Statement information already in catalog for symbol: 'SC' for the quarter:1Q2017
+06:58:16.225 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.catalog.DBInsertIncomeStmts - Income Statement information already in catalog for symbol: 'MITL' for the quarter:4Q2017
+06:58:16.226 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.catalog.DBInsertIncomeStmts - Income Statement information already in catalog for symbol: 'MITL' for the quarter:3Q2017
+06:58:16.227 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.catalog.DBInsertIncomeStmts - Income Statement information already in catalog for symbol: 'MITL' for the quarter:2Q2017
+06:58:16.229 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.catalog.DBInsertIncomeStmts - Income Statement information already in catalog for symbol: 'MITL' for the quarter:1Q2017
+06:58:16.229 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.catalog.DBInsertIncomeStmts - Inserted Income Statements in database.
+06:58:16.229 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.catalog.DBInsertIncomeStmts - Total # of records (one record per quarter each input symbol) inserted into table 'IncomeStmt2018' : 0
+06:58:16.230 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.catalog.DBInsertIncomeStmts - Total # of records skipped (were already present) for insert: 8
+06:58:16.255 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.catalog.DBInsertCashFlows - Income Statement information already in catalog for symbol: 'SC' for the quarter:4Q2017
+06:58:16.256 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.catalog.DBInsertCashFlows - Income Statement information already in catalog for symbol: 'SC' for the quarter:3Q2017
+06:58:16.257 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.catalog.DBInsertCashFlows - Income Statement information already in catalog for symbol: 'SC' for the quarter:2Q2017
+06:58:16.258 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.catalog.DBInsertCashFlows - Income Statement information already in catalog for symbol: 'SC' for the quarter:1Q2017
+06:58:16.259 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.catalog.DBInsertCashFlows - Income Statement information already in catalog for symbol: 'MITL' for the quarter:4Q2017
+06:58:16.260 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.catalog.DBInsertCashFlows - Income Statement information already in catalog for symbol: 'MITL' for the quarter:3Q2017
+06:58:16.261 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.catalog.DBInsertCashFlows - Income Statement information already in catalog for symbol: 'MITL' for the quarter:2Q2017
+06:58:16.262 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.catalog.DBInsertCashFlows - Income Statement information already in catalog for symbol: 'MITL' for the quarter:1Q2017
+06:58:16.262 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.catalog.DBInsertCashFlows - Inserted Cash Flows data into database.
+06:58:16.262 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.catalog.DBInsertCashFlows - Total # of records (one record per quarter each input symbol) inserted into table 'CashFlows2018' : 0
+06:58:16.263 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.catalog.DBInsertCashFlows - Total # of records skipped (were already present) for insert: 8
+06:58:28.126 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.catalog.DBConnectMySql - Total # of symbols processed for SQL DB insert: 4914
+06:58:28.126 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.catalog.DBConnectMySql - Total # of symbols that had their data refreshed w/ a SQL DB update: 0
+06:58:28.371 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataCompanyIndustryInfo - Reference link for Industry Background: https://www.nasdaq.com/screening/companies-by-name.aspx?letter=0&exchange=nasdaq&render=download
+06:58:29.371 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataCompanyIndustryInfo - Reference link for Industry Background: https://www.nasdaq.com/screening/companies-by-name.aspx?letter=0&exchange=nyse&render=download
+06:58:29.992 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataCompanyIndustryInfo - Reference link for Industry Background: https://www.nasdaq.com/screening/companies-by-name.aspx?letter=0&exchange=amex&render=download
+06:58:30.260 [com.jps.finserv.markets.equities.App.main()] WARN  com.jps.finserv.markets.equities.DataCompanyIndustryInfo - SQLIntegrityConstraintViolationException caught... Truncating table and refreshing dataset.
+06:58:40.989 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataCompanyIndustryInfo - Inserted Company Background dataset into DB Table.
+06:58:41.303 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataDailyIndicators - Generating data for:US:DJIA
+06:58:41.306 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataDailyIndicators - Generating data for:US:COMP
+06:58:41.306 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataDailyIndicators - Generating data for:US:SPX
+06:58:41.306 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataDailyIndicators - Generating data for:US:RUT
+06:58:41.307 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataDailyIndicators - Generating data for:XX:BUXX
+06:58:41.307 [com.jps.finserv.markets.equities.App.main()] WARN  com.jps.finserv.markets.equities.DataDailyIndicators - Not all expected values returned. Skipping adding this iteration to map.
+06:58:41.307 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataDailyIndicators - Generating data for:Crude Oil
+06:58:41.308 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataDailyIndicators - Generating data for:Gold
+06:58:41.308 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataDailyIndicators - Generating data for:BX:TMUBMUSD10Y
+06:58:41.308 [com.jps.finserv.markets.equities.App.main()] WARN  com.jps.finserv.markets.equities.DataDailyIndicators - Not all expected values returned. Skipping adding this iteration to map.
+06:58:41.308 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataDailyIndicators - Generating data for:BX:TMUBMUSD03M
+06:58:41.309 [com.jps.finserv.markets.equities.App.main()] WARN  com.jps.finserv.markets.equities.DataDailyIndicators - Not all expected values returned. Skipping adding this iteration to map.
+06:58:41.309 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataDailyIndicators - Generating data for:BX:TMUBMUSD02Y
+06:58:41.309 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataDailyIndicators - Generating data for:BX:TMUBMUSD05Y
+06:58:41.309 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataDailyIndicators - Generating data for:BX:TMUBMUSD10Y
+06:58:41.310 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataDailyIndicators - Generating data for:BX:TMUBMUSD30Y
+06:58:41.310 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataDailyIndicators - Generating data for:XX:BUXX
+06:58:41.311 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataDailyIndicators - The economic indicator map has 11 values.
+06:58:41.311 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataDailyIndicators - Data to be inserted into database:US:DJIA,24024.13,-424.56,-1.74,2018-04-25,06:58:41
+06:58:41.311 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataDailyIndicators - Data to be inserted into database:US:COMP,7007.35,-121.25,-1.70,2018-04-25,06:58:41
+06:58:41.311 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataDailyIndicators - Data to be inserted into database:US:SPX,2634.56,-35.73,-1.34,2018-04-25,06:58:41
+06:58:41.312 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataDailyIndicators - Data to be inserted into database:US:RUT,1553.28,-8.84,-0.57,2018-04-25,06:58:41
+06:58:41.312 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataDailyIndicators - Data to be inserted into database:CrudeOil,67.94,0.24,0.35,2018-04-25,06:58:41
+06:58:41.312 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataDailyIndicators - Data to be inserted into database:Gold,1325.6,-7.4,-0.56,2018-04-25,06:58:41
+06:58:41.312 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataDailyIndicators - Data to be inserted into database:BX:TMUBMUSD02Y,,-1/32,2.503,2018-04-25,06:58:41
+06:58:41.312 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataDailyIndicators - Data to be inserted into database:BX:TMUBMUSD05Y,,-2/32,2.842,2018-04-25,06:58:41
+06:58:41.312 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataDailyIndicators - Data to be inserted into database:BX:TMUBMUSD10Y,,-5/32,3.023,2018-04-25,06:58:41
+06:58:41.312 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataDailyIndicators - Data to be inserted into database:BX:TMUBMUSD30Y,,-8/32,3.196,2018-04-25,06:58:41
+06:58:41.312 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataDailyIndicators - Data to be inserted into database:XX:BUXX,85.12,0.25,0.29,2018-04-25,06:58:41
+06:58:41.359 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.DataDailyIndicators - Inserted Company Background dataset into DB Table.
+06:58:41.360 [com.jps.finserv.markets.equities.App.main()] INFO  com.jps.finserv.markets.equities.App - Total duration of the run: 62 seconds.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:16 min
+[INFO] Finished at: 2018-04-25T06:58:41-04:00
+[INFO] Final Memory: 33M/436M
+[INFO] ------------------------------------------------------------------------
