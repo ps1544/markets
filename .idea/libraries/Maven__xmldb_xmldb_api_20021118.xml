@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: xmldb:xmldb-api:20021118">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/xmldb/xmldb-api/20021118/xmldb-api-20021118.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/xmldb/xmldb-api/20021118/xmldb-api-20021118-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/xmldb/xmldb-api/20021118/xmldb-api-20021118-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
