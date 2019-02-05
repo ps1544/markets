@@ -1,0 +1,46 @@
+<bindings version="2.0"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        xmlns:link="http://www.xbrl.org/2003/linkbase"
+		xmlns:xlink="http://www.w3.org/1999/xlink" 
+		xmlns:xsi="http://www.w3.org/2000/10/XMLSchema-instance"
+        xmlns="http://java.sun.com/xml/ns/jaxb"
+		xmlns:xl="http://www.xbrl.org/2003/XLink" 
+		xmlns:xbrli="http://www.xbrl.org/2003/instance"
+		
+		xmlns:iso4217="http://www.xbrl.org/2003/iso4217"
+        xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc">
+    		<bindings schemaLocation="xl-2003-12-31.xsd" version="1.0">
+				<bindings node="//xs:complexType[@name='arcType']">    		
+					<bindings node=".//xs:attribute[@ref='xlink:title']">			
+                        <property name="ArcTitle"/>
+                	</bindings>        
+				</bindings>            
+				
+				<bindings node="//xs:complexType[@name='resourceType']">    		
+					<bindings node=".//xs:attribute[@ref='xlink:title']">
+                        <property name="ResourceTitle"/>
+                	</bindings>        
+				</bindings>            
+
+				<bindings node="//xs:complexType[@name='locatorType']">    		
+					<bindings node=".//xs:attribute[@ref='xlink:title']">
+                        <property name="LocatorTitle"/>
+                	</bindings>        
+				</bindings>            
+
+				<bindings node="//xs:complexType[@name='extendedType']">    		
+					<bindings node=".//xs:attribute[@ref='xlink:title']">
+                        <property name="ExtendedTitle"/>
+                	</bindings>        
+				</bindings>            
+
+				
+				<bindings node="//xs:complexType[@name='simpleType']">    		
+					<bindings node=".//xs:attribute[@ref='xlink:title']">
+                        <property name="SimpleTitle"/>
+                	</bindings>        
+				</bindings>            
+
+				
+            </bindings>
+</bindings>
