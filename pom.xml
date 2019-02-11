@@ -123,24 +123,7 @@
 			</exclusions>
 		</dependency>
 
-		<dependency>
-			<groupId>com.sleepycat</groupId>
-			<artifactId>dbxml</artifactId>
-			<version>6.1.4</version>
-		</dependency>
-
-		<dependency>
-			<groupId>com.sleepycat</groupId>
-			<artifactId>db</artifactId>
-			<version>6.1.4</version>
-		</dependency>
-
-		<dependency>
-			<groupId>com.sleepycat</groupId>
-			<artifactId>dbxmlexamples</artifactId>
-			<version>6.1.4</version>
-		</dependency>
-
+		
 		<!-- https://mvnrepository.com/artifact/xmldb/xmldb-api -->
 		<dependency>
 			<groupId>xmldb</groupId>
