@@ -69,14 +69,14 @@ public class App {
 						//String fileDailyMarketData = "Stocks_SortedPcntChange2018-02-15 T 10-22-57 AM EST.csv";
 
 						DBInsertIncomeStmts dbIncomeStmt = new DBInsertIncomeStmts();
-						dbIncomeStmt.prepDataForInsert (fileCompanyFinancialData, "markets", "IncomeStmt2018");
+						dbIncomeStmt.prepDataForInsert (fileCompanyFinancialData, "markets", "incomestmt2018");
 
 						DBInsertCashFlows dbCashFlows = new DBInsertCashFlows ();
-						dbCashFlows.prepDataForInsert (fileCompanyFinancialData, "markets", "CashFlows2018");
+						dbCashFlows.prepDataForInsert (fileCompanyFinancialData, "markets", "cashflows2018");
 					}
 				}
 				DataCompanyIndustryInfo industryInfo = new DataCompanyIndustryInfo();
-				industryInfo.run("markets", "IndustryBackground");
+				industryInfo.run("markets", "industrybackground");
 
 				DataDailyIndicators indicators = new DataDailyIndicators();
 				indicators.run();

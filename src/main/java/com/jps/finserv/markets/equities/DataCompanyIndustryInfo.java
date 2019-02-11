@@ -126,7 +126,9 @@ public class DataCompanyIndustryInfo {
 		String errorLine = "";
 
 		// First get listing of S&P500 stocks
-		String dirPathSnP = "C:\\Users\\pshar\\Dropbox\\Programming";
+		//String dirPathSnP = "C:\\Users\\pshar\\Dropbox\\Programming";
+		String dirPathSnP = System.getProperty("user.dir");
+
 		List<String> listSnp500 = generateSnP500List(dirPathSnP);
 
 		// Now, prep the data
@@ -216,7 +218,7 @@ public class DataCompanyIndustryInfo {
 					 * TODO: Handle this in generic fashion.
 					 * If data need not be preserved, then clean up table. 
 					 */
-					if ((tblName.trim()).equals("IndustryBackground")){
+					if ((tblName.trim()).equals("industrybackground")){
 						String delRowStmt = "DELETE FROM "+tblName;
 						PreparedStatement pstmtDelete = conn.prepareStatement(delRowStmt);
 						int countDelete = pstmtDelete.executeUpdate();

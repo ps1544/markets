@@ -85,7 +85,6 @@ public class DBConnectMySql {
 		StmtTypes.add("Cash Flow");
 		StmtTypes.add("Financial Ratios");
 
-
 		List<String> inputList  = modReadFile.readFileIntoListOfStrings(fileCompanyFinancialData);
 
 		logger.debug("The size of the returned list is:" + inputList .size());
@@ -691,7 +690,7 @@ public class DBConnectMySql {
 	}
 
 	/**
-	 * Pushes output of a SQL query to a CSV file
+	 * 
 	 * @param query The SQL query to be run 
 	 * @param strTableHeading A string containing all relevant column headers for the CSV with commas separating them
 	 * @param numTableColumns Number of columns
